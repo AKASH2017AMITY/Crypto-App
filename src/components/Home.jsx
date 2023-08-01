@@ -4,8 +4,8 @@ import './home.css'
 
 function Home() {
   return (
-    <div>
-      <img className="homeImage" src={home} />
+    <div style={{backgroundColor:"black"}}>
+    <img src={home} alt="asd" className='image'/>
       <h3>Crypto App By Ak</h3>
     </div>
   )

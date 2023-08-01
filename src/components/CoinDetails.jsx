@@ -4,8 +4,8 @@ import axios from 'axios';
 import Loader from './Loader';
 import { useParams } from 'react-router-dom';
 import {server} from '../index'
-import { color } from 'framer-motion';
-import { Box, background } from '@chakra-ui/react';
+// import { color } from 'framer-motion';
+import { Box } from '@chakra-ui/react';
 import Chart from './Chart';
 
 
@@ -92,14 +92,14 @@ function CoinDetails() {
   }
 
   return (
-    <div>
+    <div style={{margin:"0 0 75px 70px"}}>
       {
       loading ? <Loader /> : <>
       {
 
         <>
 
-        <Box width={"70%"} height={"70%"} borderWidth={"1"} margin-left={"50px"}>
+        <Box width={"90%"} height={"60%"} borderWidth={"1"}  display={"flex"} position={"relative"} alignItems={"center"}>
           <Chart arr={chartArray} currency={CurrencySymbol} days={days}/>
         </Box>
 

@@ -1,10 +1,5 @@
-.homeImage {
-    
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    object-fit: contain;
-    
+.image {
+    width: 100%;   
 }
 
 @media screen and (max-width: 600px){

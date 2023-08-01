@@ -20,7 +20,7 @@ export default function Coins() {
       setLoading(true);
     }
 
-    const btns = new Array(132).fill(1);
+    const btns = new Array(99).fill(1);
 
     useEffect(()=>{
         const fetchCoins = async () => {
@@ -45,7 +45,7 @@ export default function Coins() {
     }
 
   return (
-    <div>
+    <div style={{marginBottom:"65px"}}>
     { loading ? <Loader /> : <> {
       <>
       <div className='radio' >
